@@ -1,5 +1,7 @@
 # Run — the living terminal (prototype)
 
+**Live demo:** https://jimmerioles.github.io/run/
+
 ![Run idle](docs/idle.webp)
 
 Run is a one-screen landing page for a terminal-native coding agent. The product demo is the terminal itself: a command types itself, tiny robots drop out of the prompt, and four checks turn green one at a time.
