@@ -1,0 +1,31 @@
+{
+  "kit": "1.1.0",
+  "title": "Run: the living terminal, explained",
+  "slug": "run",
+  "targetSeconds": 195,
+  "theme": {
+    "accent": "#9dff78",
+    "chrome": {
+      "left": "RUN",
+      "center": "THE LIVING TERMINAL",
+      "right": "PROTOTYPE 01"
+    }
+  },
+  "voice": {
+    "engine": "kokoro",
+    "name": "af_heart",
+    "fallback": "af_bella"
+  },
+  "mix": {
+    "bed": "music.m4a"
+  },
+  "capture": {
+    "url": "http://localhost:5174",
+    "selector": "#terminal-window",
+    "viewport": { "width": 1440, "height": 900 }
+  },
+  "verify": {
+    "frameAt": 16,
+    "golden": "golden/frame.png"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "title": "Run: the living terminal, explained",
+  "segments": [
+    {
+      "id": "intro",
+      "title": "One key press",
+      "sentences": [
+        "This is a landing page with no hero image.",
+        "No feature grid. No testimonial wall.",
+        "There is a terminal, and a command waiting inside it.",
+        "You press Enter once.",
+        "Then the product explains itself."
+      ],
+      "notes": "Open on the real page. Hold the terminal. The command ghost blinks. Push in as the key is pressed."
+    },
+    {
+      "id": "gesture",
+      "title": "The contract",
+      "sentences": [
+        "The demo has exactly one interaction.",
+        "Press Enter, or click Run.",
+        "That is the whole contract.",
+        "No carousel. No scroll trick. No second ask.",
+        "Everything after the key press is a consequence."
+      ],
+      "notes": "One key icon in the centre, a ripple, and the rest of the page furniture falling away."
+    },
+    {
+      "id": "stage",
+      "title": "The stage",
+      "sentences": [
+        "The terminal is the hero.",
+        "Near-black glass, phosphor lime, scanlines, a soft vignette.",
+        "It looks like the place where work actually happens.",
+        "The command types itself into the prompt.",
+        "Attention stays on the line that matters."
+      ],
+      "notes": "Terminal screenshot as an object. Callout lines to glass, scanline, prompt and caret."
+    },
+    {
+      "id": "checks",
+      "title": "Four checks",
+      "sentences": [
+        "The run is four checks.",
+        "Types, lint, tests, build.",
+        "Each row waits, turns amber while it works, then goes green.",
+        "The detail line narrates the messy middle.",
+        "Errors found. Patches applied. Tests passing.",
+        "The result is a receipt."
+      ],
+      "notes": "Four rows build in sequence. Real labels, real counts, real fixes. Amber working, green fixed."
+    },
+    {
+      "id": "robots",
+      "title": "The body",
+      "sentences": [
+        "The work needs a body.",
+        "Each check gets a small robot on a canvas above the terminal.",
+        "It spawns from the caret and follows a curved path to its row.",
+        "It blinks, sparks, then pops a checkmark.",
+        "The robot makes the latency legible."
+      ],
+      "notes": "Draw the Bezier path from caret to row, then the robot on it. Spark and checkmark on the last beat."
+    },
+    {
+      "id": "clock",
+      "title": "The clock",
+      "sentences": [
+        "Under the animation, one clock runs everything.",
+        "Every pause waits on a frame-driven queue.",
+        "One animation frame advances the timeline and the canvas together.",
+        "Hide the tab, or scroll away, and the run pauses.",
+        "The demo never races ahead of you."
+      ],
+      "notes": "One RAF pulse feeding two lanes: timeline and canvas. A visibility gate closes and both lanes hold."
+    },
+    {
+      "id": "sound",
+      "title": "The quiet layer",
+      "sentences": [
+        "Sound arrives only after you press Enter.",
+        "A tiny synthesizer builds every sound from oscillators and filtered noise.",
+        "Key clicks, spawn blips, spark ticks, a ping for each green check.",
+        "No audio files. No autoplay. No surprise.",
+        "Mute it, and the run keeps its rhythm on screen."
+      ],
+      "notes": "Audio graph left to right: source, filter, gain, compressor, destination. Notes appear as events."
+    },
+    {
+      "id": "compression",
+      "title": "The compression",
+      "sentences": [
+        "The terminal says two minutes and fourteen seconds.",
+        "The choreography is compressed to about ten.",
+        "That is a lie about time, not about sequence.",
+        "The state machine is real even when the work is scripted.",
+        "Point it at a live feed, and it becomes a product."
+      ],
+      "notes": "Two clocks: 2:14 and 0:10. Task data object. A live feed arrow replaces the scripted array."
+    },
+    {
+      "id": "restraint",
+      "title": "The quiet defaults",
+      "sentences": [
+        "The page still works when the motion stops.",
+        "Reduced motion hides the canvas and keeps every status change.",
+        "Enter starts a run. Every control is a real button.",
+        "The layout holds from laptop to phone.",
+        "Restraint is part of the design, not a fallback."
+      ],
+      "notes": "Split stage: full motion and reduced motion, same status rows. Keyboard and responsive outlines."
+    },
+    {
+      "id": "close",
+      "title": "The demo is the product",
+      "sentences": [
+        "One key press.",
+        "Four checks.",
+        "Twelve fixes.",
+        "A branch ready to push.",
+        "And the next run is one key away.",
+        "The demo is the product."
+      ],
+      "notes": "Return to the complete terminal, then pull back to the whole page. The final line stands alone."
+    }
+  ]
+}

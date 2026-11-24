@@ -39,6 +39,18 @@ Open the URL Vite prints (defaults to `http://localhost:5173`). Build with `npm 
   <img src="docs/mobile.webp" width="390" alt="Run at 390×844" />
 </p>
 
+## Watch the explainer
+
+<p align="center">
+  <a href="https://github.com/jimmerioles/run/releases/download/explainer-v1/run-explainer.mp4">
+    <img src="docs/explainer/poster.jpg" width="760" alt="Run: the living terminal, explained" />
+  </a>
+</p>
+
+A 3:19 film about the page and the machinery: one key press, four checks, the canvas robots, the single clock, the synthesizer, and the quiet defaults. Narrated with Kokoro `af_heart`. The poster opens the 1080p cut.
+
+https://github.com/user-attachments/assets/93bcf3f5-544d-4cc7-9d8b-aec347c5df51
+
 ## How it works
 
 ```
