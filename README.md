@@ -47,7 +47,7 @@ Open the URL Vite prints (defaults to `http://localhost:5173`). Build with `npm 
   </a>
 </p>
 
-A 3:19 film about the page and the machinery: one key press, four checks, the canvas robots, the single clock, the synthesizer, and the quiet defaults. Narrated with Kokoro `af_heart`. The poster opens the 1080p cut.
+A 3:19 film about the page and the machinery: one key press, four checks, the canvas robots, the single clock, the synthesizer, and the quiet defaults. Narrated with Kokoro `af_heart`. The poster opens the 1080p cut. Press play, then unmute for the narration.
 
 https://github.com/user-attachments/assets/93bcf3f5-544d-4cc7-9d8b-aec347c5df51
 
