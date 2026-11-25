@@ -4,9 +4,13 @@ A one-screen landing page for a terminal agent that fixes a repo in one command.
 
 **Live demo:** https://jimmerioles.github.io/run/
 
+**Case study:** https://jimmerioles.github.io/run/case-study/
+
 https://github.com/user-attachments/assets/104e0d0e-204b-4f39-a171-8b0b7e124db8
 
 Run is a front-end prototype for a terminal-native coding agent, aimed at people building or evaluating agent UIs. The page has no hero image or feature grid: the terminal is the demo, and one key press drives it. The run is scripted, but the state machine, canvas robots, synthesized sound, and pause behavior are fully implemented.
+
+The [case study](https://jimmerioles.github.io/run/case-study/) covers the problem, the run log, the architecture, the accessibility path, and what the demo does not claim.
 
 The explainer starts muted; unmute for the narration.
 
@@ -48,7 +52,7 @@ No automated suite yet. `npm run build` is the current check: `tsc` plus the pro
 
 ## Status
 
-Prototype. The run is scripted, and the page's Docs and GitHub links are placeholders.
+Prototype. The run is scripted, the install command is a prop, and no CLI is published. The GitHub link points to this repository.
 
 ## Credits and license
 

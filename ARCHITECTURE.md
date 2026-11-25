@@ -1,13 +1,16 @@
 # Architecture
 
-Run is a static Vite and TypeScript page with no UI framework. The build is a single HTML entry point, one stylesheet, and three modules.
+Run is a static Vite and TypeScript project with no UI framework. The build has two HTML entry points: the demo and the case study. The demo is one HTML file, one stylesheet, and three modules.
 
 ```
-index.html          page shell and terminal structure
-src/main.ts         task data, run state machine, DOM updates, frame loop
-src/robots.ts       canvas scene, robot paths, particles, dust
-src/audio.ts        Web Audio graph and synthesized sounds
-src/style.css       layout, terminal styling, motion, responsive rules
+index.html              demo shell and terminal structure
+src/main.ts             task data, run state machine, DOM updates, frame loop
+src/robots.ts           canvas scene, robot paths, particles, dust
+src/audio.ts            Web Audio graph and synthesized sounds
+src/style.css           demo layout, terminal styling, motion, responsive rules
+src/theme.css           shared color, type, and easing tokens
+case-study/index.html   static case study document
+src/case-study.css      case study layout and typography
 ```
 
 ## Run state machine
@@ -36,6 +39,10 @@ When reduced motion is active, the scene clears its robots and particles and sto
 
 Key clicks and spark ticks use a short noise buffer through a bandpass filter. Spawn blips, task pings, and the final chord use oscillators with short gain envelopes. There are no audio files. The mute toggle sets the master gain and stores the preference in `localStorage`.
 
+## Case study
+
+`case-study/index.html` is a static long-form document with no JavaScript. It uses the same theme tokens as the demo, reuses the screenshots in `docs/`, and links back to the demo. The page has its own Vite entry and stylesheet, so the landing page does not load its content or assets. It is meant to stay readable when the demo cannot run.
+
 ## Input and accessibility
 
 `Enter` starts or replays a run unless the event target is a button, link, input, textarea, select, or editable element. Modified Enter presses are ignored. The visible Run and Replay controls are real buttons with focus states.
@@ -51,8 +58,8 @@ npm run build
 npm run preview
 ```
 
-`npm run build` runs `tsc` and then the Vite production build. The GitHub Pages workflow in `.github/workflows/deploy-pages.yml` builds on every push to `main` and deploys `dist/`.
+`npm run build` runs `tsc` and then the Vite production build. The build writes `dist/index.html` and `dist/case-study/index.html`; `vite.config.ts` lists both HTML entries. The GitHub Pages workflow in `.github/workflows/deploy-pages.yml` builds on every push to `main` and deploys `dist/`.
 
 ## Current limits
 
-The task data is scripted. There is no real command runner, no backend, and no automated test suite. The Docs and GitHub links in the page are placeholders. The install row copies a prop command; no CLI is published.
+The task data is scripted. There is no real command runner, no backend, and no automated test suite. The install row copies a prop command; no CLI is published. The case study is a static document and does not read live demo state.

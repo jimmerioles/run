@@ -1,0 +1,20 @@
+:root {
+  --bg: #060807;
+  --bg-deep: #040605;
+  --ink: #ece7d6;
+  --ink-dim: #b8bfb0;
+  --muted: #8d978b;
+  --faint: #788478;
+  --phosphor: #9dff78;
+  --phosphor-bright: #ceffb2;
+  --phosphor-deep: #45c95c;
+  --amber: #ffb765;
+  --amber-deep: #cc8a40;
+  --panel: #090d09;
+  --line: rgba(197, 255, 204, 0.09);
+  --line-strong: rgba(197, 255, 204, 0.17);
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
+  --display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

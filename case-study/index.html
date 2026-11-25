@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060807" />
+    <meta
+      name="description"
+      content="Run case study: a landing page where the terminal is the demo. One key press, four checks, and a scripted run that still tells the truth about sequence."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Run case study: The terminal is the pitch."
+    />
+    <meta
+      property="og:description"
+      content="How a one-screen landing page turns a scripted agent run into the product demo, and what it refuses to claim."
+    />
+    <title>Run case study: The terminal is the pitch.</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070906'/%3E%3Cpath d='M8 11l5 5-5 5' stroke='%239dff78' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 21h8' stroke='%23eee8d5' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/case-study.css" />
+  </head>
+  <body class="cs-body">
+    <a class="cs-skip" href="#case-study-main">Skip to the case study</a>
+
+    <header class="cs-topbar">
+      <a class="cs-brand" href="../" aria-label="Run home">
+        <span class="cs-brand__shell" aria-hidden="true">&gt;_</span>
+        <span class="cs-brand__word">run</span>
+        <span class="cs-brand__caret" aria-hidden="true"></span>
+        <span class="cs-brand__divider" aria-hidden="true"></span>
+        <span class="cs-brand__section">Case study</span>
+      </a>
+      <a class="cs-back" href="../" aria-label="Back to the demo">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path
+            d="M10.5 3.5 6 8l4.5 4.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span>Back to the demo</span>
+      </a>
+    </header>
+
+    <main id="case-study-main" class="cs-main" tabindex="-1">
+      <article>
+        <header class="cs-hero">
+          <div class="cs-shell">
+            <p class="cs-kicker">
+              <span class="cs-kicker__dot" aria-hidden="true"></span>
+              <span>Run / Case study</span>
+            </p>
+
+            <h1 class="cs-hero__title">
+              The terminal<br />
+              <span class="cs-hero__accent">is the pitch</span
+              ><span class="cs-hero__period">.</span>
+            </h1>
+
+            <p class="cs-hero__lede">
+              Run is a one-screen landing page for a terminal agent. The demo is
+              not a hero image or a feature grid. It is a run: four checks move
+              from waiting to working to fixed, while a small canvas of robots
+              makes the waiting visible. Press one key and the product explains
+              itself.
+            </p>
+
+            <div class="cs-hero__bottom">
+              <div class="cs-actions">
+                <a class="cs-button cs-button--primary" href="../">
+                  <span>Open the demo</span>
+                  <svg viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                      d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="cs-button cs-button--ghost" href="#run-log">
+                  <span>Read the run log</span>
+                  <svg viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                      d="M8 3v9M4.5 8.5 8 12l3.5-3.5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <dl class="cs-facts">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Product design and frontend</dd>
+                </div>
+                <div>
+                  <dt>Stack</dt>
+                  <dd>TypeScript, Vite, Canvas 2D</dd>
+                </div>
+                <div>
+                  <dt>Sound</dt>
+                  <dd>Web Audio, no files</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Prototype, November 2026</dd>
+                </div>
+              </dl>
+            </div>
+
+            <figure class="cs-figure cs-figure--hero">
+              <div class="cs-figure__chrome" aria-hidden="true">
+                <span class="cs-figure__dots"><i></i><i></i><i></i></span>
+                <span>live page / idle</span>
+                <span>1280 x 800</span>
+              </div>
+              <img
+                src="../docs/idle.webp"
+                alt="The Run landing page at rest: a large headline on the left and a terminal card on the right with four waiting checks."
+                width="1280"
+                height="800"
+              />
+              <figcaption>
+                <span>FIG. 01</span> The page at rest. The terminal is the
+                largest object because it is the argument.
+              </figcaption>
+            </figure>
+          </div>
+        </header>
+
+        <div class="cs-shell cs-sections">
+          <section
+            class="cs-section"
+            id="problem"
+            aria-labelledby="problem-title"
+          >
+            <div class="cs-section__rail">
+              <span class="cs-section__number">01</span>
+              <p class="cs-section__label">The problem</p>
+            </div>
+            <div class="cs-section__body">
+              <h2 id="problem-title">
+                Most agent pages describe the work. They never show it.
+              </h2>
+              <p class="cs-lede">
+                A terminal agent makes a promise about sequence: it looks,
+                changes, checks, and reports. A hero image flattens that promise
+                into a still. A feature grid turns it into adjectives.
+              </p>
+              <p>
+                Run is a landing page for that kind of agent. The usual page was
+                not going to work. The product is not a dashboard, a chat bubble,
+                or a board of cards. It is a run: a command, four checks, a set
+                of fixes, and a receipt.
+              </p>
+              <p>
+                So the page had to answer one question before it asked for an
+                install: what does it feel like to watch this thing work?
+              </p>
+
+              <ul class="cs-list">
+                <li>
+                  <strong>A terminal screenshot.</strong> It shows the place, not
+                  the work. Every row is frozen in one state.
+                </li>
+                <li>
+                  <strong>A code block.</strong> It shows the command, not the
+                  consequence.
+                </li>
+                <li>
+                  <strong>A product video.</strong> It shows sequence, but at a
+                  distance. You cannot step into a state, copy a count, or replay
+                  a single check.
+                </li>
+                <li>
+                  <strong>A live demo.</strong> It costs more to build. It is also
+                  the only one where the state is the interface, not a recording
+                  of it.
+                </li>
+              </ul>
+
+              <p>
+                Run chooses the live demo, with a hard constraint: one screen,
+                one key press, no second ask.
+              </p>
+
+              <div class="cs-compare">
+                <h3>What a still cannot show</h3>
+                <p class="cs-compare__intro">
+                  A still can suggest a run. Only a sequence can show one.
+                </p>
+                <table>
+                  <caption class="cs-sr-only">
+                    A comparison of a still image and the Run demo for state,
+                    time, evidence, access, and failure
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Criterion</th>
+                      <th scope="col">A still</th>
+                      <th scope="col">Run's demo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">State</th>
+                      <td data-label="A still">
+                        One frame, chosen for the screenshot.
+                      </td>
+                      <td data-label="Run's demo">
+                        Four checks move through waiting, working, and fixed.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Time</th>
+                      <td data-label="A still">Frozen, or edited to fit.</td>
+                      <td data-label="Run's demo">
+                        About ten seconds, with a replay at the end.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Evidence</th>
+                      <td data-label="A still">
+                        Claims and counts that cannot be inspected.
+                      </td>
+                      <td data-label="Run's demo">
+                        Every detail line, fix count, and result is in the DOM.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Access</th>
+                      <td data-label="A still">An image with alt text.</td>
+                      <td data-label="Run's demo">
+                        Real buttons, a progressbar, and a live region.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Failure</th>
+                      <td data-label="A still">Hidden.</td>
+                      <td data-label="Run's demo">
+                        The middle is the point: errors, patches, and re-runs.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="what" aria-labelledby="what-title">
+            <div class="cs-section__rail">
+              <span class="cs-section__number">02</span>
+              <p class="cs-section__label">What it is</p>
+            </div>
+            <div class="cs-section__body">
+              <h2 id="what-title">
+                A landing page that behaves like the product.
+              </h2>
+              <p class="cs-lede">
+                The page has a headline, one primary action, and a terminal. No
+                hero image, no feature grid, no testimonial wall. The terminal is
+                the demo, and the demo is the argument.
+              </p>
+              <p>
+                Press Enter or click Run. The command types itself into the
+                prompt. Four checks wake up in sequence. Each row carries its own
+                detail line: 3 type errors, 7 lint warnings, 2 failing tests, 2
+                import cycles. The messy middle stays visible instead of being
+                summarized away.
+              </p>
+              <p>
+                The numbers climb. A robot spawns from the caret, travels to the
+                working row, sparks, and pops a check. When the last check goes
+                green, the result panel gives the receipt: 12 fixes, 2m 14s, four
+                files changed, and a branch ready to push. The page then offers
+                the only other sensible action: run it again.
+              </p>
+
+              <div class="cs-statement">
+                <p>
+                  The demo is not a picture of work. It is the sequence,
+                  compressed.
+                </p>
+              </div>
+
+              <p>
+                The palette stays narrow: near-black glass, phosphor lime, one
+                amber working state. Scanlines and a vignette sit over the
+                terminal surface. The restraint is deliberate. If the animation
+                stopped, the DOM would still be a legible report.
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="cs-section"
+            id="run-log"
+            aria-labelledby="run-log-title"
+          >
+            <div class="cs-section__rail">
+              <span class="cs-section__number">03</span>
+              <p class="cs-section__label">The run log</p>
+            </div>
+            <div class="cs-section__body">
+              <h2 id="run-log-title">The run in ten seconds.</h2>
+              <p class="cs-lede">
+                The interface claims 2m 14s. The choreography is about ten. That
+                is compression, not a different story: every state and every
+                count is implemented, and the result names what changed.
+              </p>
+
+              <div class="cs-walkthrough">
+                <aside class="cs-ticket" aria-label="Run summary">
+                  <div class="cs-ticket__chrome">
+                    <span class="cs-ticket__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span>run.log</span>
+                    <span>00:10</span>
+                  </div>
+                  <div class="cs-ticket__body">
+                    <p class="cs-ticket__path">~/acme/web</p>
+                    <p class="cs-ticket__cmd">
+                      <span aria-hidden="true">&#10095;</span> run fix --all
+                    </p>
+                    <dl class="cs-ticket__stats">
+                      <div>
+                        <dt>checks</dt>
+                        <dd>4</dd>
+                      </div>
+                      <div>
+                        <dt>fixes</dt>
+                        <dd>12</dd>
+                      </div>
+                      <div>
+                        <dt>stage</dt>
+                        <dd>00:10</dd>
+                      </div>
+                      <div>
+                        <dt>claim</dt>
+                        <dd>02:14</dd>
+                      </div>
+                    </dl>
+                    <p class="cs-ticket__state">
+                      <span class="cs-ticket__dot" aria-hidden="true"></span>
+                      all checks green
+                    </p>
+                  </div>
+                  <div class="cs-ticket__foot">
+                    scripted run / no backend / replayable
+                  </div>
+                </aside>
+
+                <div class="cs-shotlist">
+                  <h3>What happens, beat by beat</h3>
+                  <ol class="cs-shots">
+                    <li>
+                      <p class="cs-shots__time">0:00 to 0:01</p>
+                      <div>
+                        <h4>The prompt waits.</h4>
+                        <dl>
+                          <div>
+                            <dt>Action</dt>
+                            <dd>Press Enter.</dd>
+                          </div>
+                          <div>
+                            <dt>On screen</dt>
+                            <dd>
+                              The ghost command sits behind a blinking caret.
+                              The terminal says idle. Four rows are waiting.
+                            </dd>
+                          </div>
+                          <div>
+                            <dt>Why</dt>
+                            <dd>
+                              One action is visible before anything moves. The
+                              page has nothing else to ask.
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="cs-shots__time">0:01 to 0:02</p>
+                      <div>
+                        <h4>The command types itself.</h4>
+                        <dl>
+                          <div>
+                            <dt>Action</dt>
+                            <dd>Watch the prompt.</dd>
+                          </div>
+                          <div>
+                            <dt>On screen</dt>
+                            <dd>
+                              Characters land with a key click. The hint
+                              disappears, the caret moves, and the mode changes
+                              from idle to running.
+                            </dd>
+                          </div>
+                          <div>
+                            <dt>Why</dt>
+                            <dd>
+                              The run starts with a sound and a line of text, not
+                              a loading spinner.
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="cs-shots__time">0:02 to 0:04</p>
+                      <div>
+                        <h4>Types wakes up.</h4>
+                        <dl>
+                          <div>
+                            <dt>Action</dt>
+                            <dd>Keep watching the first row.</dd>
+                          </div>
+                          <div>
+                            <dt>On screen</dt>
+                            <dd>
+                              The row turns amber. Its detail moves from checking
+                              214 files to 3 errors to applying patches. A robot
+                              leaves the caret and curves toward the row.
+                            </dd>
+                          </div>
+                          <div>
+                            <dt>Why</dt>
+                            <dd>
+                              A failure is shown as a place in the list, not as a
+                              toast that disappears.
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="cs-shots__time">0:04 to 0:07</p>
+                      <div>
+                        <h4>Lint and tests do the messy work.</h4>
+                        <dl>
+                          <div>
+                            <dt>Action</dt>
+                            <dd>Watch the counts and the robots.</dd>
+                          </div>
+                          <div>
+                            <dt>On screen</dt>
+                            <dd>
+                              Lint finds 7 warnings, autofixes, then re-runs.
+                              Tests find 2 failures, triage, patch snapshots, and
+                              report 128 passing. Lint lands 4 fixes; tests land
+                              3.
+                            </dd>
+                          </div>
+                          <div>
+                            <dt>Why</dt>
+                            <dd>
+                              The middle is where the product lives. It gets the
+                              most screen time.
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="cs-shots__time">0:07 to 0:09</p>
+                      <div>
+                        <h4>Build closes the loop.</h4>
+                        <dl>
+                          <div>
+                            <dt>Action</dt>
+                            <dd>Watch the last row and the branch label.</dd>
+                          </div>
+                          <div>
+                            <dt>On screen</dt>
+                            <dd>
+                              Two import cycles appear, chunks optimize, and the
+                              row settles at 84.2 kB. The branch changes from
+                              main to run/fix-all.
+                            </dd>
+                          </div>
+                          <div>
+                            <dt>Why</dt>
+                            <dd>
+                              The least dramatic check still gets a real detail
+                              line and a real count.
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="cs-shots__time">0:09 to 0:10</p>
+                      <div>
+                        <h4>The receipt lands.</h4>
+                        <dl>
+                          <div>
+                            <dt>Action</dt>
+                            <dd>Let the final chord play.</dd>
+                          </div>
+                          <div>
+                            <dt>On screen</dt>
+                            <dd>
+                              The result panel turns solid green: All checks
+                              passed, 12 fixes, 2m 14s, 4 files changed. Replay
+                              appears.
+                            </dd>
+                          </div>
+                          <div>
+                            <dt>Why</dt>
+                            <dd>
+                              The run ends with a receipt, not confetti. The next
+                              action is one key away.
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </li>
+                  </ol>
+
+                  <p class="cs-small">
+                    The 3:19 narrated film covers the same beats. This log is the
+                    short version.
+                  </p>
+
+                  <figure class="cs-figure cs-figure--walkthrough">
+                    <div class="cs-figure__chrome" aria-hidden="true">
+                      <span class="cs-figure__dots"><i></i><i></i><i></i></span>
+                      <span>live page / running</span>
+                      <span>FIG. 02</span>
+                    </div>
+                    <img
+                      src="../docs/running.webp"
+                      alt="The Run page mid-run: the types row is amber and working, a robot hovers over it, and the result panel says Fixing types."
+                      width="1280"
+                      height="800"
+                      loading="lazy"
+                    />
+                    <figcaption>
+                      <span>FIG. 02</span> The working state. Amber carries the
+                      active row; the robot gives the latency a body.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="how" aria-labelledby="how-title">
+            <div class="cs-section__rail">
+              <span class="cs-section__number">04</span>
+              <p class="cs-section__label">How it works</p>
+            </div>
+            <div class="cs-section__body">
+              <h2 id="how-title">One clock, one script, one stage.</h2>
+              <p class="cs-lede">
+                The architecture is small on purpose. There is no framework, no
+                scene graph, and no backend. The demo is one HTML entry, one
+                stylesheet, and three TypeScript modules.
+              </p>
+
+              <ol class="cs-steps">
+                <li>
+                  <span class="cs-steps__number" aria-hidden="true">01</span>
+                  <div>
+                    <h3>One clock owns time.</h3>
+                    <p>
+                      Every pause in the run goes through a frame-driven queue.
+                      Nothing calls setTimeout. A single
+                      requestAnimationFrame loop subtracts the delta, resolves
+                      due waiters, and advances the canvas. Hide the tab or
+                      scroll the terminal away and the loop stops. The run
+                      pauses instead of skipping ahead.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="cs-steps__number" aria-hidden="true">02</span>
+                  <div>
+                    <h3>The script is data.</h3>
+                    <p>
+                      Four task objects carry labels, detail beats, durations,
+                      fix counts, and completion copy. The sequence is an async
+                      function that types the command, runs each task, waits, and
+                      finishes. Replace the array with a live feed and the rows
+                      already know how to render it.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="cs-steps__number" aria-hidden="true">03</span>
+                  <div>
+                    <h3>The canvas adds a body.</h3>
+                    <p>
+                      Each robot stores a cubic path from the caret to its row.
+                      It spawns, travels, works, celebrates, and exits. Sparks
+                      and trail particles are capped. The canvas is aria-hidden,
+                      and reduced motion clears it completely. The robots make
+                      latency legible, then leave.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="cs-steps__number" aria-hidden="true">04</span>
+                  <div>
+                    <h3>Sound is a gesture, not a default.</h3>
+                    <p>
+                      A tiny synthesizer builds key clicks from filtered noise,
+                      and spawn blips, task pings, and the final chord from
+                      oscillators. There are no audio files and no autoplay. The
+                      context is created after a user gesture, and the mute
+                      preference survives a reload.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+
+              <div class="cs-code">
+                <div class="cs-code__bar" aria-hidden="true">
+                  <span>src/main.ts</span>
+                  <span>frame clock</span>
+                </div>
+                <p class="cs-code__label">One loop advances both lanes</p>
+                <pre><code>function frame(now: number): void {
+  if (document.hidden || !terminalVisible) return;
+  const dt = Math.min((now - lastFrame) / 1000, 0.25);
+  lastFrame = now;
+
+  advanceWaiters(dt);
+  scene.frame(dt, now / 1000);
+  rafId = requestAnimationFrame(frame);
+}</code></pre>
+              </div>
+
+              <p>
+                The DOM is still the interface. Status rows, the progress meter,
+                the result, and the live region are all real elements. The canvas
+                is an enhancement; the report is the product.
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="cs-section"
+            id="budget"
+            aria-labelledby="budget-title"
+          >
+            <div class="cs-section__rail">
+              <span class="cs-section__number">05</span>
+              <p class="cs-section__label">The budget</p>
+            </div>
+            <div class="cs-section__body">
+              <h2 id="budget-title">A small budget, held on purpose.</h2>
+              <p class="cs-lede">
+                Run is a prototype, not a benchmark. It still has budgets: one
+                animation loop, a capped device pixel ratio, a capped particle
+                list, and no backend.
+              </p>
+
+              <dl class="cs-stats">
+                <div>
+                  <dt>Key press</dt>
+                  <dd>
+                    <strong>1</strong>
+                    <span>one way in</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Checks</dt>
+                  <dd>
+                    <strong>4</strong>
+                    <span>sequential states</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Fixes</dt>
+                  <dd>
+                    <strong>12</strong>
+                    <span>written into the script</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Particle cap</dt>
+                  <dd>
+                    <strong>360</strong>
+                    <span>oldest trimmed first</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>DPR cap</dt>
+                  <dd>
+                    <strong>2x</strong>
+                    <span>canvas backing store</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Audio files</dt>
+                  <dd>
+                    <strong>0</strong>
+                    <span>oscillators and noise</span>
+                  </dd>
+                </div>
+              </dl>
+
+              <p>
+                The canvas backing store follows a ResizeObserver. Device pixel
+                ratio is capped at 2. The particle list trims at 360. A single
+                animation frame loop advances the timeline and the scene, and
+                the loop stops when the tab is hidden or the terminal is out of
+                view.
+              </p>
+              <p>
+                There is no published frame trace yet. The target is a steady
+                60fps on a laptop and a clean first load on a phone. Treat these
+                figures as design budgets, not lab results.
+              </p>
+            </div>
+          </section>
+
+          <section class="cs-section" id="access" aria-labelledby="access-title">
+            <div class="cs-section__rail">
+              <span class="cs-section__number">06</span>
+              <p class="cs-section__label">Accessibility</p>
+            </div>
+            <div class="cs-section__body">
+              <h2 id="access-title">Every state has a text equivalent.</h2>
+              <p class="cs-lede">
+                The canvas is the most visible layer and the least important one
+                for assistive technology. The DOM carries the run.
+              </p>
+
+              <div class="cs-cols">
+                <ul class="cs-list cs-list--tight">
+                  <li>
+                    <strong>Controls are real.</strong> Run, Replay, the sound
+                    toggle, and the install row are buttons. Enter starts or
+                    replays a run only when focus is not inside a control and no
+                    modifier is held.
+                  </li>
+                  <li>
+                    <strong>Status is text.</strong> Each row exposes waiting,
+                    working, or fixed, plus a detail line and a fix count. Color
+                    is a second signal, never the only one.
+                  </li>
+                  <li>
+                    <strong>The meter is a progressbar.</strong>
+                    aria-valuenow and aria-valuetext track completed checks. A
+                    polite live region announces each fixed check and the final
+                    result.
+                  </li>
+                  <li>
+                    <strong>Reduced motion is a real path.</strong> The canvas
+                    hides, robots and particles stop, and every status change
+                    still happens. The run still completes.
+                  </li>
+                  <li>
+                    <strong>Sound is optional.</strong> It starts after a
+                    gesture, the mute state persists, and the demo loses nothing
+                    without it.
+                  </li>
+                  <li>
+                    <strong>Responsive by subtraction.</strong> At 600px the
+                    install row and the demo footnote step aside, the terminal
+                    type tightens, and the run stays on one screen. The page is
+                    built from 390x844 up.
+                  </li>
+                </ul>
+
+                <figure class="cs-figure cs-figure--access">
+                  <div class="cs-figure__chrome" aria-hidden="true">
+                    <span class="cs-figure__dots"><i></i><i></i><i></i></span>
+                    <span>live page / complete</span>
+                    <span>FIG. 03</span>
+                  </div>
+                  <img
+                    src="../docs/complete.webp"
+                    alt="The completed Run page: all four checks are fixed, the progress meter is full, and the result panel says All checks passed with 12 fixes."
+                    width="1280"
+                    height="800"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <span>FIG. 03</span> The completed run. Every line in this
+                    state, including the counts, is a DOM node.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <p>
+                The remaining gap is verification. There is no automated
+                accessibility test yet. The checklist is manual: keyboard pass,
+                reduced motion pass, 390px pass. That is a limit, not a claim.
+              </p>
+            </div>
+          </section>
+
+          <section class="cs-section" id="limits" aria-labelledby="limits-title">
+            <div class="cs-section__rail">
+              <span class="cs-section__number">07</span>
+              <p class="cs-section__label">Limitations</p>
+            </div>
+            <div class="cs-section__body">
+              <h2 id="limits-title">What this does not claim.</h2>
+              <p class="cs-lede">
+                The demo is convincing because it is specific. Specific has
+                edges.
+              </p>
+
+              <div class="cs-cols">
+                <ul class="cs-list cs-list--tight">
+                  <li>
+                    <strong>The run is scripted.</strong> No CLI is published, no
+                    repository is opened, and no subprocess runs.
+                  </li>
+                  <li>
+                    <strong>The checks cannot fail.</strong> There is no retry,
+                    rollback, or human approval path, because there is no real
+                    work.
+                  </li>
+                  <li>
+                    <strong>The time is narrative.</strong> 2m 14s is part of the
+                    story. The choreography is about ten seconds.
+                  </li>
+                  <li>
+                    <strong>The install command is a prop.</strong> It copies
+                    <code class="cs-inline-code">npm i -g run</code>, but this
+                    project does not publish a CLI.
+                  </li>
+                  <li>
+                    <strong>There is no automated test suite.</strong> The
+                    production build is the current check.
+                  </li>
+                  <li>
+                    <strong>The performance figures are budgets.</strong> No
+                    frame trace is published.
+                  </li>
+                  <li>
+                    <strong>The sound is a cue track.</strong> The explainer film
+                    has its own score by Vincent Schmalbach (MIT).
+                  </li>
+                  <li>
+                    <strong>Phones lose a little context.</strong> Below 600px
+                    the install row and the demo footnote are hidden to keep the
+                    terminal in view.
+                  </li>
+                </ul>
+
+                <figure class="cs-figure cs-figure--mobile">
+                  <img
+                    src="../docs/mobile.webp"
+                    alt="The Run page at a mobile width, with the headline, Run button, and full terminal stacked in one column."
+                    width="390"
+                    height="844"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <span>FIG. 04</span> The page at 390x844. The terminal keeps
+                    the stage; the install row and footnote step aside.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="next" aria-labelledby="next-title">
+            <div class="cs-section__rail">
+              <span class="cs-section__number">08</span>
+              <p class="cs-section__label">What is next</p>
+            </div>
+            <div class="cs-section__body">
+              <h2 id="next-title">Make the demo do the work.</h2>
+              <p class="cs-lede">
+                The interface is ready for a real feed. The next version should
+                remove the asterisks one at a time.
+              </p>
+
+              <ol class="cs-next">
+                <li>
+                  <span aria-hidden="true">01</span>
+                  <div>
+                    <h3>Wire a real run</h3>
+                    <p>
+                      Stream events from a PTY or an agent process into the same
+                      task objects. Keep the beats, replace the data.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span aria-hidden="true">02</span>
+                  <div>
+                    <h3>Ship the CLI or cut the command</h3>
+                    <p>
+                      An install row that copies a prop is the biggest honesty
+                      gap. Either publish
+                      <code class="cs-inline-code">run</code> or label the row as
+                      a mock.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span aria-hidden="true">03</span>
+                  <div>
+                    <h3>Add a test suite</h3>
+                    <p>
+                      Cover the state machine, the reduced-motion path, and the
+                      live region. The production build is not enough.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span aria-hidden="true">04</span>
+                  <div>
+                    <h3>Record the short walkthrough</h3>
+                    <p>
+                      The 3:19 explainer exists. Cut a 60-second case study
+                      version from the six beats above.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span aria-hidden="true">05</span>
+                  <div>
+                    <h3>Prove a second scenario</h3>
+                    <p>
+                      A Python repository or a failing monorepo would show the
+                      pattern is not tuned to one happy path.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span aria-hidden="true">06</span>
+                  <div>
+                    <h3>Publish a frame trace</h3>
+                    <p>
+                      Measure paint counts and frame pacing on a mid-range laptop,
+                      then put the numbers beside the budgets.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer class="cs-footer">
+      <div class="cs-shell cs-footer__inner">
+        <div>
+          <p class="cs-footer__mark">run</p>
+          <p class="cs-footer__note">
+            A prototype, not a product. The command and the run are props; the
+            interface is real. Built by
+            <a href="https://github.com/jimmerioles">Jim Merioles</a>. Type set
+            in JetBrains Mono and Space Grotesk.
+          </p>
+        </div>
+        <div class="cs-footer__links">
+          <a class="cs-back" href="../" aria-label="Back to the demo">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M10.5 3.5 6 8l4.5 4.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Back to the demo</span>
+          </a>
+          <a class="cs-small" href="#case-study-main">Back to top</a>
+        </div>
+      </div>
+      <div class="cs-shell cs-footer__meta">
+        <span>Run / Prototype 01 / 2026</span>
+        <span>One screen. One key press.</span>
+      </div>
+    </footer>
+  </body>
+</html>
