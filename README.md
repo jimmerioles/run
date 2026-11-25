@@ -67,6 +67,6 @@ Prototype. The run is scripted, the install command is a prop, and no CLI is pub
 
 ## Credits and license
 
-Built by [@jimmerioles](https://github.com/jimmerioles). Explainer score by Vincent Schmalbach (MIT). Production notes for the film live in [docs/explainer](docs/explainer).
+Built by [@jimmerioles](https://github.com/jimmerioles).
 
 License: no license file yet. Ask before reusing the code.
