@@ -806,9 +806,12 @@
               </div>
 
               <p>
-                The remaining gap is verification. There is no automated
-                accessibility test yet. The checklist is manual: keyboard pass,
-                reduced motion pass, 390px pass. That is a limit, not a claim.
+                The smoke suite now covers the keyboard start, reduced motion,
+                replay, and the live region in a real browser. What remains
+                manual is the accessibility audit itself: contrast, focus order,
+                and screen-reader reading order have no automated check. The
+                checklist is a keyboard pass, a reduced motion pass, and a 390px
+                pass. That is a limit, not a claim.
               </p>
             </div>
           </section>
@@ -846,8 +849,9 @@
                     project does not publish a CLI.
                   </li>
                   <li>
-                    <strong>There is no automated test suite.</strong> The
-                    production build is the current check.
+                    <strong>The test suite is a smoke test.</strong> Playwright
+                    covers the run contract and the accessibility state. Canvas
+                    pixels, audio, and visual regression are checked by eye.
                   </li>
                   <li>
                     <strong>The performance figures are budgets.</strong> No
@@ -919,10 +923,12 @@
                 <li>
                   <span aria-hidden="true">03</span>
                   <div>
-                    <h3>Add a test suite</h3>
+                    <h3>Deepen the test suite</h3>
                     <p>
-                      Cover the state machine, the reduced-motion path, and the
-                      live region. The production build is not enough.
+                      The Playwright smoke suite covers the state machine, the
+                      reduced-motion path, and the live region. Next: unit tests
+                      for the frame clock and a visual check at the completed
+                      state.
                     </p>
                   </div>
                 </li>

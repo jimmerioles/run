@@ -1,8 +1,8 @@
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 
-export default defineConfig(({ command }) => ({
-  base: command === "build" ? "/run/" : "/",
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/run/" : "/",
   appType: "mpa",
   build: {
     rollupOptions: {

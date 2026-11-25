@@ -48,7 +48,12 @@ Open the URL Vite prints (defaults to `http://localhost:5173`). `npm run build` 
 
 ## Tests
 
-No automated suite yet. `npm run build` is the current check: `tsc` plus the production build.
+```bash
+npx playwright install chromium
+npm test
+```
+
+`npm test` builds the site, then runs a Playwright smoke suite against `vite preview`. It covers the run from `Enter` to the green result, the Enter-key exclusions, replay, reduced motion, and the pause on a hidden tab. The suite checks behavior and accessibility state, not pixels; the canvas and audio still need eyes and ears. CI runs it before the Pages deploy.
 
 ## Status
 

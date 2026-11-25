@@ -11,6 +11,8 @@ src/style.css           demo layout, terminal styling, motion, responsive rules
 src/theme.css           shared color, type, and easing tokens
 case-study/index.html   static case study document
 src/case-study.css      case study layout and typography
+tests/demo.spec.ts      Playwright smoke tests for the run contract
+playwright.config.ts    preview server and browser settings for the suite
 ```
 
 ## Run state machine
@@ -58,8 +60,8 @@ npm run build
 npm run preview
 ```
 
-`npm run build` runs `tsc` and then the Vite production build. The build writes `dist/index.html` and `dist/case-study/index.html`; `vite.config.ts` lists both HTML entries. The GitHub Pages workflow in `.github/workflows/deploy-pages.yml` builds on every push to `main` and deploys `dist/`.
+`npm run build` runs `tsc` and then the Vite production build. The build writes `dist/index.html` and `dist/case-study/index.html`; `vite.config.ts` lists both HTML entries. `npm test` builds the site and runs the Playwright smoke suite against the preview server. The GitHub Pages workflow in `.github/workflows/deploy-pages.yml` runs the suite on every push to `main` and deploys `dist/` only if it passes.
 
 ## Current limits
 
-The task data is scripted. There is no real command runner, no backend, and no automated test suite. The install row copies a prop command; no CLI is published. The case study is a static document and does not read live demo state.
+The task data is scripted. There is no real command runner and no backend. The Playwright suite is a browser smoke test: it checks the run contract and accessibility state, not canvas pixels, audio output, or visual regression. The install row copies a prop command; no CLI is published. The case study is a static document and does not read live demo state.
