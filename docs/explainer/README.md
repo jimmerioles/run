@@ -41,7 +41,7 @@ capture.mjs     screenshots of the real page at key beats
 assets/         captured page and terminal stills
 music.json      score metadata and license
 music.m4a       score bed
-poster.jpg      first frame of the published master
+poster.jpg      1920x1080 idle capture of the demo, first frame of the master
 golden/         reference frame for render checks
 ```
 
@@ -49,7 +49,7 @@ The generated `build/` directory is ignored. It holds narration stems, the mixed
 
 ## Poster-first cut
 
-The published master opens on `poster.jpg` instead of the original dark first frame. The poster holds for 2.5 s, crossfades for 0.5 s, then the film continues from 2.5 s. The original audio starts at zero, so duration, sync, and chapter timings are unchanged.
+The published master opens on `poster.jpg`, a 1920x1080 idle capture of the live demo page, instead of the original dark first frame. The poster holds for 2.5 s, crossfades for 0.5 s, then the film continues from 2.5 s. The original audio starts at zero, so duration, sync, and chapter timings are unchanged.
 
 ```bash
 SOURCE=build/film.mp4
