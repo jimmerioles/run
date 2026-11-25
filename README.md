@@ -4,7 +4,7 @@ A one-screen landing page for a terminal agent that fixes a repo in one command.
 
 **Live demo:** https://jimmerioles.github.io/run/
 
-https://github.com/user-attachments/assets/240882b1-6894-48a2-a580-aeb9bd0e70e2
+https://github.com/user-attachments/assets/eb56bb3b-f8e5-4695-9375-93058c6e5f89
 
 Run is a front-end prototype for a terminal-native coding agent, aimed at people building or evaluating agent UIs. The page has no hero image or feature grid: the terminal is the demo, and one key press drives it. The run is scripted, but the state machine, canvas robots, synthesized sound, and pause behavior are fully implemented.
 
