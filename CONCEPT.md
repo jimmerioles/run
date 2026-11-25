@@ -1,4 +1,4 @@
-# Run — the living terminal
+# Run: the living terminal
 
 A landing page for a CLI or coding agent where the terminal is the hero.
 
