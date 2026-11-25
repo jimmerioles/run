@@ -40,7 +40,7 @@ Open the URL Vite prints (defaults to `http://localhost:5173`). `npm run build` 
 
 ## How it works
 
-`src/main.ts` runs an abortable async sequence on a pause-aware frame clock. The same clock advances the canvas scene in `src/robots.ts` and the Web Audio cues in `src/audio.ts`; the four tasks come from a scripted data array. See [ARCHITECTURE.md](ARCHITECTURE.md) for the state machine, canvas layer, pause behavior, and audio graph.
+`src/main.ts` runs an abortable async sequence on a pause-aware frame clock. The same clock advances the canvas scene in `src/robots.ts`, the sequence triggers the Web Audio cues in `src/audio.ts`, and the four tasks come from a scripted data array. See [ARCHITECTURE.md](ARCHITECTURE.md) for the state machine, canvas layer, pause behavior, and audio graph.
 
 ## Tests
 
